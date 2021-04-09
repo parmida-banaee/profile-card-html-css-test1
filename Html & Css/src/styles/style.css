@@ -1,13 +1,8 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_bold.woff);
-    font-weight: bold;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', serif;
 }
 
 html {
@@ -23,10 +18,13 @@ body {
     justify-content: center;
     background-color: hsl(185, 75%, 39%);
     height: 100%;
+    background-image: url('../assets/bg-pattern-top.svg'), url('../assets/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: -45% 210%, 135% -155%;
 }
 
 #card {
-    width: 25%;
+    width: 23%;
     background-color: white;
     margin: auto;
     display: flex;
@@ -56,10 +54,8 @@ body {
 }
 
 figure {
-    height: 100%;
-    width: 25%;
     position: inherit;
-    top: -70px;
+    top: -60px;
     border: 8px solid white;
     border-radius: 50%;
     overflow: hidden;
@@ -72,31 +68,62 @@ figure {
 
 .card-name {
     margin-top: -45px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 25px;
     text-align: center;
 }
 
-.card-details {
-    margin: 25px;
+.card-name h2 {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h2.age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.card-name p {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div.name {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+
+.name h2 {
+    padding: 0 5px;
+}
+
+.card-details {
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-.numbers {
-    display: flex;
+.align {
+    text-align: center;
 }
 
-.numbers h2 {
-    padding: 0 25px;
+.align h2 {
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
 }
 
-.title {
-    display: flex;
+.align p {
+    font-size: 8px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 2px;
 }
 
-.title p {
-    padding: 0 25px;
+hr {
+    color: hsl(227, 10%, 46%);
 }
