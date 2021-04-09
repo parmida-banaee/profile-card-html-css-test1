@@ -124,6 +124,7 @@ div.name {
     letter-spacing: 2px;
 }
 
-hr {
-    color: hsl(227, 10%, 46%);
+.line {
+    width: 100%;
+    border-top: 1px solid #d4d4d4;
 }
