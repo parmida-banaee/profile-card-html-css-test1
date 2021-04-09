@@ -1,0 +1,102 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    height: 100%;
+}
+
+#card {
+    width: 25%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-pattern {
+    width: 100%;
+}
+
+.card-pattern img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.card-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+figure {
+    height: 100%;
+    width: 25%;
+    position: inherit;
+    top: -70px;
+    border: 8px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-name {
+    margin-top: -45px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.card-details {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbers {
+    display: flex;
+}
+
+.numbers h2 {
+    padding: 0 25px;
+}
+
+.title {
+    display: flex;
+}
+
+.title p {
+    padding: 0 25px;
+}
